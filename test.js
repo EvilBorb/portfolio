@@ -16,7 +16,7 @@ submitButton.addEventListener("click", async (e) => {
             title: title.value, 
             sender: userName.value
         };
-        const response = await fetch('/api/contact', {method: 'POST',
+        const response = await fetch('https://portfolio-u3yk.onrender.com/api/contact', {method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -29,7 +29,6 @@ submitButton.addEventListener("click", async (e) => {
 
         const responseData = await response.json();
         
-        // This will now print correctly without crashing sir
         console.log("Email received:", responseData.email);
     } catch (error) {
         
