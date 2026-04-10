@@ -6,8 +6,7 @@ const path = require('path');
 dotenv.config();
 
 const app = express();
-const serverPort = process.env.PORT || 3000;
-const serverHost = process.env.HOST || '127.0.0.1';
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -64,8 +63,8 @@ function postToForum(postTitle, postContent, usernameSender) {
     request.end();
 }
 
-app.listen(serverPort, serverHost, () => {
-    process.stdout.write(`Server running at http://${serverHost}:${serverPort} sir\n`);
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
 
 app.post('/api/contact', (req, res) => {
