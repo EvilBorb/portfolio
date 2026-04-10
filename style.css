@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navigation Sir */
+.navBar {
+    height: 60px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.navItem {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navItem:hover {
+    color: #00aaff;
+}
+
+/* Hero Section Sir */
+.heroSection {
+    min-height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 20px 60px 20px;
+}
+
+.heroContainer {
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    gap: 50px;
+}
+
+.profileImage {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 6px solid #00aaff;
+    object-fit: cover;
+    display: block;
+}
+
+.userName {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+.userBio {
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+/* Icons and Buttons Sir */
+.socialIcons {
+    display: flex;
+    gap: 25px;
+}
+
+.footerIcons {
+    justify-content: center;
+    margin-top: 40px; /* Space between form and icons sir */
+}
+
+.iconButton {
+    width: 65px;
+    height: 65px;
+    transition: transform 0.3s;
+}
+
+.iconButton img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.iconButton:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* General Section Layout Sir */
+.sectionTitle {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #00aaff;
+}
+
+.workSection, .pricingSection, .tosSection, .finalContact {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Work Grid Sir */
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.workBox {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+}
+
+.workBox:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 170, 255, 0.2);
+    border-color: #00aaff;
+}
+
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Pricing and TOS Sir */
+.priceGrid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.priceCard, .tosContent, .contactContainer {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.priceCard {
+    flex: 1;
+    text-align: center;
+}
+
+/* Contact Form Specifics Sir */
+.contactContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Vertical margin between inputs sir */
+    margin: 30px 0;
+}
+
+.formGroup {
+    width: 100%;
+}
+
+.formInput {
+    width: 100%;
+    padding: 15px;
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.formInput:focus {
+    border-color: #00aaff;
+}
+
+.formTextarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+#submitButton {
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    padding: 14px 45px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#submitButton:hover {
+    background-color: #0088cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 170, 255, 0.3);
+}
+
+/* Footer Sir */
+.mainFooter {
+    padding: 40px 20px;
+    background-color: #0a0a0a;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.copyrightText {
+    color: #666666;
+    font-size: 13px;
+}
